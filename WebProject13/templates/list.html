@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br/>
+<br/>
+<h1>Entry Record</h1>
+<div>
+  <a href="{% url 'add' %}" role="button"><i class="fa fa-2x fa-plus-square" aria-hidden="true">Add More Records</i></a>
+</div>
+<table class="table" style="margin-top: 5%;">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Roll No.</th>
+      <th scope="col">Category</th>
+      <th scope="col">Gender</th>
+      <th scope="col">State</th>
+      <th scope="col">See/Edit/Delete</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {% for each in object_list %}
+        <th scope="row">{{ forloop.counter }}</th>
+        <td>{{ each.name }}</td>
+        <td>{{ each.rollno }}</td>
+        <td>{{ each.category }}</td>
+        <td>{{ each.gender }}</td>
+        <td>{{ each.state }}</td>
+              <td>
+                <div>
+                  <a href="{% url 'detail' each.id %}" class="btn btn-default bg-success" role="button">See</a>
+                  <a href="{% url 'update' each.id %}" class="btn btn-default bg-primary" role="button" style="margin-left: 20px;">Edit</a>
+                  <a href="{% url 'delete' each.id %}" class="btn btn-default bg-danger" role="button" style="margin-left: 20px;">Delete</a>
+              </div>
+              </td>
+            </tr>
+      {% empty %}
+      <tr>
+        <th>No Data Found</th>
+      </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

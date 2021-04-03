@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h4 style="margin-top: 50px;">Details of {{ object.name }}:</h4>
+<ul style="margin-top: 20px;">
+    <li>Roll Number: <b>{{ object.rollno }}</b></li>
+    <li>Category: <b>{{ object.category }}</b></li>
+    <li>Gender: <b>{{ object.gender }}</b></li>
+    <li>State: <b>{{ object.state }}</b></li>
+</ul>
+
+<div>
+    <a href="{% url 'update' object.id %}" class="btn btn-default bg-primary" role="button">Update</a>
+    <a href="{% url 'delete' object.id %}" class="btn btn-default bg-danger" role="button">Delete</a>
+    <a href="{% url 'home' %}" class="btn btn-default bg-secondary" role="button">Back to List</a>
+</div>
+
+{% endblock %}
