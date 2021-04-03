@@ -43,5 +43,11 @@ ApplicationName: Web
 5. https://www.geeksforgeeks.org/listview-class-based-views-django/
 6. https://www.geeksforgeeks.org/class-based-generic-views-django-create-retrieve-update-delete/
 
+For understanding the concept of makemigrations and migrate:
+1. https://www.geeksforgeeks.org/django-basic-app-model-makemigrations-and-migrate/
+2. https://stackoverflow.com/questions/29980211/django-1-8-whats-the-difference-between-migrate-and-makemigrations
+3. https://dev.to/ashraf_zolkopli/django-makemigrations-migrate-collect-static-and-createsuperuser-15j8
+4. https://sixfeetup.com/blog/django-migrate-or-makemigrations
+
 ###### Result:
 ![](Results/WebProject13.png)
