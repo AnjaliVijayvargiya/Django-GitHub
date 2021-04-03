@@ -26,6 +26,10 @@ A Small Project based on Class Based Views(CBV) implemented in Django. In this, 
 4. You can see admin page by the runserver-url/admin.
 5. Understand the concept of form.as_p; form.as_table; form.as_ul.
 6. How to use base.html file with the concept of Template Inheritance
+7. Do not forget to call two commands after creation of model:
+    1. python manage.py makemigrations
+    2. python manage.py migrate
+    3. then call; python manage.py runserver
 
 ProjectName: WebProject13
 
