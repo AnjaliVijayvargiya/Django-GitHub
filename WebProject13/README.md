@@ -8,6 +8,10 @@ A Small Project based on Class Based Views(CBV) implemented in Django. In this, 
 5. Understand the concept of form.as_p; form.as_table; form.as_ul.
 6. How to use base.html file with the concept of Template Inheritance
 
+ProjectName: WebProject13
+
+ApplicationName: Web
+
 ###### Links:
 1. https://www.geeksforgeeks.org/createview-class-based-views-django/
 2. https://www.geeksforgeeks.org/listview-class-based-views-django/
