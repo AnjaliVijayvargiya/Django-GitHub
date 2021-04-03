@@ -24,6 +24,15 @@ A Small Project based on Class Based Views(CBV) implemented in Django. In this, 
 2. How to give path for that template.
 3. How to createsuperuser to see the admin page for watching the records in the database as well.
 4. Understand the concept of form.as_p; form.as_table; form.as_ul.
+5. How to use base.html file with the concept of Template Inheritance
+
+###### Links:
+1. https://www.geeksforgeeks.org/createview-class-based-views-django/
+2. https://www.geeksforgeeks.org/listview-class-based-views-django/
+3. https://www.geeksforgeeks.org/detailview-class-based-views-django/
+4. https://www.geeksforgeeks.org/updateview-class-based-views-django/
+5. https://www.geeksforgeeks.org/listview-class-based-views-django/
+6. https://www.geeksforgeeks.org/class-based-generic-views-django-create-retrieve-update-delete/
 
 ###### Result:
 
