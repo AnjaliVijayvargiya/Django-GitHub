@@ -37,5 +37,5 @@ ApplicationName: Web
 
 
 ###### Result:
-![](Results/WebProject14.png)
+![](../Results/WebProject14.png)
 
