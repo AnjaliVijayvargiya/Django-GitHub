@@ -16,7 +16,7 @@ ProjectName: NinthWebProject
 ApplicationName: WEB
 
 ###### Result:
-![](Results/WebProject9a.png)
-![](Results/WebProject9b.png)
-![](Results/WebProject9c.png)
-![](Results/WebProject9d.png)
+![](../Results/WebProject9a.png)
+![](../Results/WebProject9b.png)
+![](../Results/WebProject9c.png)
+![](../Results/WebProject9d.png)
