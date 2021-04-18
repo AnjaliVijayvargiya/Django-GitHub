@@ -17,7 +17,7 @@
 12. WebProject12-------------------Django_CRUD_Operation_ClassBasedView_GFGBased
 13. WebProject13-------------------13Django_CRUD_Operation_ClassBasedView_ImplementationinTableFormat_EntryDetails
 14. WebProject14-------------------14Django_Rendering_Forms_InVariousWays
-15. WebProject15-------------------15Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase
+15. WebProject15------------15Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase
 
 #### 9. NinthWebProject
 ###### Title: 9Django_BasicNumericalOperation_UsingForm_TemplateInheritance
