@@ -206,21 +206,25 @@ https://www.geeksforgeeks.org/multiplechoicefield-django-forms/
 https://pypi.org/project/django-multiselectfield/
 https://www.youtube.com/watch?v=5jWJBpS0tkg
 
-6. 
-
-7. 
-8. 
-9. How to render forms using models.py and forms.py.
-10. How to call them in views.py
-11. Connect the views in urls.py
-12. How to createsuperuser to see the admin page for watching the records in the database as well.
-13. You can see admin page by the runserver-url/admin.
-14. Understand the concept of form.as_p; form.as_table; form.as_ul.
-15. Use of *args and ** kwargs in Python
-16. Do not forget to call two commands after creation of model:
+6. How to increase the size of django-forms charfields.
+7. How to add class, id, placeholder, size, rows and cols attributes in widget. I have shared link below.
+8. How to render forms using models.py and forms.py; How to call them in views.py; Connect the views in urls.py.
+9. For database visualization; You can see localhost/admin page after creating superuser.
+10. Do not forget to call two commands after creation of model:
     1. python manage.py makemigrations
     2. python manage.py migrate
     3. then call; python manage.py runserver
+
+
+In case, if form is not submitted and rendering the same entry page; then check following things:
+1. First of all, fill all the fields.
+2. Correct Email format; such as vijay@gmail.com
+3. Check Time format; it should be like this- 09:00:20
+4. Select at least one color
+5. Select gender as well
+6. Click on proceed checkbox button
+
+if all the entries are in corrent format; then you will able to see the detail.html page.
 
 ProjectName: WebProject15
 
@@ -237,7 +241,7 @@ ApplicationName: Web
 
 
 ###### Result:
-![](Results/WebProject14.png)
+![](Results/WebProject15.png)
 
 
 
