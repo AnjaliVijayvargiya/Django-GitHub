@@ -255,6 +255,7 @@ ApplicationName: WEB
 ![](Results/WebProject9b.png)
 ![](Results/WebProject9c.png)
 ![](Results/WebProject9d.png)
+===========================================================================================================================================================================
 
 #### 11. WebProject11
 ##### Title: 11Django_CRUD_Operation_FunctionBasedView_ImplementationinTableFormat_EntryDetails
@@ -288,7 +289,7 @@ ApplicationName: Web
 
 ###### Result:
 ![](Results/WebProject11.png)
-
+===========================================================================================================================================================================
 
 #### 13. WebProject13
 ##### Title: 13Django_CRUD_Operation_ClassBasedView_ImplementationinTableFormat_EntryDetails
@@ -324,6 +325,7 @@ For understanding the concept of makemigrations and migrate:
 
 ###### Result:
 ![](Results/WebProject13.png)
+===========================================================================================================================================================================
 
 #### 14. WebProject14
 ##### Title: 14Django_Rendering_Forms_InVariousWays
@@ -365,6 +367,7 @@ ApplicationName: Web
 
 ###### Result:
 ![](Results/WebProject14.png)
+===========================================================================================================================================================================
 
 #### 15. WebProject15
 ##### Title: 15Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase
@@ -456,6 +459,7 @@ ApplicationName: Web
 
 ###### Result:
 ![](Results/WebProject15.png)
+===========================================================================================================================================================================
 
 
 
