@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}List1{% endblock title %}
+
+{% block body %}
+List 1
+{% endblock body %}
+
+{% block homeactive %}
+active
+{% endblock homeactive %}
+
+{% block content %}
+(Iteration wise Separation)</br>
+{% for i in things %}
+<div class="{% cycle 'row1' 'row2' 'row3' %}">
+    {{ forloop.counter }}. {{ i }}
+    {% if forloop.counter|divisibleby:3 %}
+    </br></br>
+    {% endif %}
+</div>
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}List3{% endblock title %}
+
+{% block body %}
+List 3
+{% endblock body %}
+
+{% block contactactive %}
+active
+{% endblock contactactive %}
+
+{% block content %}
+(Separation in Table format)</br>
+<div class="d-flex justify-content-center">
+<table style="border: 1px solid black; border-collapse: collapse; margin-top: 12px;">
+    <thead>
+        <tr>
+            <th style="padding:20px; border: 1px solid blue;">#</th>
+            <th style="padding:20px; border: 1px solid blue;">Green Things</th>
+            <th style="padding:20px; border: 1px solid blue;">Red Things</th>
+            <th style="padding:20px; border: 1px solid blue;">Blue Things</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i,j,k in data %}
+        <tr>
+            <td style="padding:20px; border: 1px solid blue;">
+                {{ forloop.counter }}
+            </td>
+            <td class="row1" style="padding:20px; border: 1px solid blue;">
+                {{ i }}
+                <img class="wow bounceIn" data-wow-delay="1.5s" src="/static/images/{{ forloop.counter }}{{ forloop.counter }}{{ forloop.counter }}.png" width="100" height="100" alt="">
+            </td>
+            <td class="row2" style="padding:20px; border: 1px solid blue;">
+                {{ j }}
+                <img class="wow bounceIn" data-wow-delay="1.5s" src="/static/images/{{ forloop.counter }}{{ forloop.counter }}{{ forloop.counter }}.jpg" width="100" height="100" alt="">
+            </td>
+            <td class="row3" style="padding:20px; border: 1px solid blue;">
+                {{ k }}
+                <img class="wow bounceIn" data-wow-delay="1.5s" src="/static/images/{{ forloop.counter }}{{ forloop.counter }}{{ forloop.counter }}.gif" width="100" height="100" alt="">
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock content %}

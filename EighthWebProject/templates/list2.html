@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}List2{% endblock title %}
+
+{% block body %}
+List 2
+{% endblock body %}
+
+{% block aboutactive %}
+active
+{% endblock aboutactive %}
+
+{% block content %}
+(Color wise Separation)</br>
+{% for i in things %}
+<span class="{% cycle 'row1' 'row2' 'row3' as state %}">
+    {% if state == 'row1' %}
+    {{ forloop.counter }}. {{ i }}
+    {% endif %}
+</span>
+{% endfor %}</br>
+{% for i in things %}
+<span class="{% cycle 'row1' 'row2' 'row3' as state %}">
+    {% if state == 'row2' %}
+    {{ forloop.counter }}. {{ i }}
+    {% endif %}
+</span>
+{% endfor %}</br>
+{% for i in things %}
+<span class="{% cycle 'row1' 'row2' 'row3' as state %}">
+    {% if state == 'row3' %}
+    {{ forloop.counter }}. {{ i }}
+    {% endif %}
+</span>
+{% endfor %}
+{% endblock content %}
