@@ -12,9 +12,9 @@
 7. SeventhWebProject---------------7Django_PassPythonVariables_toTemplates_Used_base.html_TemplateInheritance
 8. EighthWebProject---8Django_CycleTag_CommentTag_Usingbase.html_TemplateInheritance_TableFormat_PassingValues_Animation
 9. NinthWebProject-----------------9Django_BasicNumericalOperation_UsingForm_TemplateInheritance
-10. WebProject10-------------------Django_CRUD_Operation_FunctionBasedView_GFGBased
+10. WebProject10-------------------10Django_CRUD_Operation_FunctionBasedView_GFGBased
 11. WebProject11-------------------11Django_CRUD_Operation_FunctionBasedView_ImplementationinTableFormat_EntryDetails
-12. WebProject12-------------------Django_CRUD_Operation_ClassBasedView_GFGBased
+12. WebProject12-------------------12Django_CRUD_Operation_ClassBasedView_GFGBased
 13. WebProject13-------------------13Django_CRUD_Operation_ClassBasedView_ImplementationinTableFormat_EntryDetails
 14. WebProject14-------------------14Django_Rendering_Forms_InVariousWays
 15. WebProject15------------15Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase
