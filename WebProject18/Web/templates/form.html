@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .design {
+            margin: auto;
+            max-width: 400px;
+            padding-top: 10px;
+            padding-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <div class="design" style="background-color: aquamarine;">
+            <h3 style="margin-left:120px;">Entry</h3>
+            {% csrf_token %}
+
+            <!-- All the ways for rendering Django forms<br>
+            id 1 : by unordered list<br>
+            id 2 : by paragraph<br>
+            id 3 : by table<br>
+            id 4 : Manually<br> -->
+
+            <!-- <div id="1">
+                {{ form.as_ul }}
+            </div> -->
+
+            <!-- <div id="2">
+                {{ form.as_p }}
+            </div> -->
+
+           <!--  <div id="3">
+                <table>
+                    {{ form.as_table }}
+                </table>
+            </div> -->
+
+            <div id="4">
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 50px;">Name </label>
+                    {{ form.name }}
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 33px;">Roll No. </label>
+                    {{ form.rollno }}
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 30px;">Category</label>
+                    {{ form.category }}
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 54px;">Email</label>
+                    {{ form.email }}
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 54px;">Gender</label>
+                    {{ form.gender }}
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 54px;">Date</label>
+                    {{ form.date }}
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 54px;">Time</label>
+                    {{ form.time }}
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 54px;">Color: &nbsp;&nbsp;&nbsp; You can select multiple colors</label>
+                    {{ form.favorite_color }}
+                </div>
+                <!-- <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 54px;">Model</label>
+                    {{ form.model_choice }}
+                </div>  -->
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 15px;">Description</label>
+                    {{ form.description }}
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label style="margin-right: 54px;">Do you want to proceed?</label>
+                    {{ form.agree }}
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary"
+                style="margin-left: 110px; font-size: medium; background: rgb(241, 187, 148);">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

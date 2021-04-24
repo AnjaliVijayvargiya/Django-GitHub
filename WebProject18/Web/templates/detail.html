@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: beige;">
+    <div style="margin: auto; max-width: 300px;">
+        <h3>Entered Details:</h3>
+        Name:&nbsp;&nbsp;&nbsp;{{ name }}<br><br>
+        Roll Number:&nbsp;&nbsp;&nbsp;{{ rollno }}<br><br>
+        Category:&nbsp;&nbsp;&nbsp;{{ category }}<br><br>
+        Email:&nbsp;&nbsp;&nbsp;{{ email }}<br><br>
+        gender:&nbsp;&nbsp;&nbsp;{{ gender }}<br><br>
+        Date:&nbsp;&nbsp;&nbsp;{{ date }}<br><br>
+        Time:&nbsp;&nbsp;&nbsp;{{ time }}<br><br>
+        <!-- favorite_color:&nbsp;&nbsp;&nbsp; {{ favorite_color }}<br><br> -->
+        favorite_color:&nbsp;&nbsp;&nbsp;
+        {% for each in favorite_color %}
+            {% if each == color %}
+                {{ each }}
+            {% else %}
+                {{ each }},
+            {% endif %}
+        {% endfor %}<br><br>
+        Description:&nbsp;&nbsp;&nbsp;{{ description }}<br><br>
+    </div>
+</body>
+</html>
