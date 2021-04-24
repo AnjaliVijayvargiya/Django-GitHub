@@ -1,5 +1,5 @@
 #### 15. WebProject15
-###### Title: 15Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase_FunctionBasedView
+##### Title: 15Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase_FunctionBasedView
 A Mini Project on how to render forms in Django with various types of form fields. In this, a simple form is made for collecting entries and displaying them after submitting these entries. There are 4 ways exists to render the Django forms. I have implemented all these in this project.
 1. Render Django Forms as unordered list
 2. Render Django Forms as paragraph
@@ -10,7 +10,7 @@ I have commented in the above 3 ways for checking the working of the last way(Ma
 
 
 
-I have defined various types of form-fields:
+###### I have defined various types of form-fields:
 1. name; CharField; Increase the textinput size by widget attrs; define placeholder value by widget attrs.
 2. rollno; IntegerField; Increase the NumberInput size with using style by widgets attrs and define placeholder value by widget attrs
 3. category; CharField; Increase the textinput size by widget attrs; define placeholder value by widget attrs.
@@ -35,7 +35,7 @@ I have defined various types of form-fields:
 
 
 
-While implementating this project, I have learnt some things:
+###### While implementating this project, I have learnt some things:
 1. It is necessary to assign max_length parameters with defining fields in models.py.
 2. When adding extra fields in models.py; first define their max_length, and define "null=True" before running python manage.py makemirations and migrate.
 
@@ -62,7 +62,7 @@ https://www.youtube.com/watch?v=5jWJBpS0tkg
     3. then call; python manage.py runserver
 
 
-In case, if form is not submitted and rendering the same entry page; then check following things:
+###### In case, if form is not submitted and rendering the same entry page; then check following things:
 1. First of all, fill all the fields.
 2. Correct Email format; such as vijay@gmail.com
 3. Check Time format; it should be like this- 09:00:20
@@ -87,4 +87,4 @@ ApplicationName: Web
 
 
 ###### Result:
-![](../Results/WebProject15.png)
+![](../Results/WebProject15&18.png)
