@@ -18,6 +18,7 @@
 13. WebProject13-------------------13Django_CRUD_Operation_ClassBasedView_ImplementationinTableFormat_EntryDetails
 14. WebProject14-------------------14Django_Rendering_Forms_InVariousWays
 15. WebProject15------------15Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase_FunctionBasedView
+16. WebProject16------------16Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase_ClassBasedView
 
 #### 8. EighthWebProject
 ##### Title: 8Django_CycleTag_CommentTag_Usingbase.html_TemplateInheritance_TableFormat_PassingValues_Animation
