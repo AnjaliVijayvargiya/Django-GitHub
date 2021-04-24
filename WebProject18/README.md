@@ -28,4 +28,4 @@ ApplicationName: Web
 2. https://www.youtube.com/watch?v=XQjaTUwTJRY&t=1s
 
 ###### Result:
-![](Results/WebProject15&18.png)
+![](../Results/WebProject15&18.png)
