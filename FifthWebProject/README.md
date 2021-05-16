@@ -43,4 +43,4 @@ ProjectName: FifthWebProject
 ApplicationName: Web1
 
 ###### Result:
-![](Results/WebProject5&6.png)
+![](../Results/WebProject5&6.png)
