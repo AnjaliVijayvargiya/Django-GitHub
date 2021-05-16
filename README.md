@@ -46,7 +46,7 @@ ProjectName: SixthWebProject
 ApplicationName: Web
 
 ###### Result:
-![](Results/WebProject6.png)
+![](Results/WebProject5&6.png)
 ===========================================================================================================================================================================
 
 #### 7. SeventhWebProject
