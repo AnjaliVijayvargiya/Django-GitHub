@@ -23,6 +23,183 @@
 18. WebProject18------------18Django_RenderingForms_Widgets&itsAttrs_FormFieldVariousTypes_EntriesSaveInDatabase_ClassBasedView
 
 
+#### 1. FirstWebProject
+##### Title: 1Django_SimpleHTMLPage_Connectivity
+It is about how to connect a simple HTML Webpage with Django Framework. It is an step by step approach.
+
+First of all; 
+###### Prerequisite:
+Make sure you have all this libararies installed on your system
+1. Python 3.7 (django library easily installed when you have this version)
+set Environmental variables for python
+2. Numpy (for future references)
+3. Pandas (for future references)
+4. Django
+python -m pip install django
+
+When django is successfully installed
+
+###### Steps:
+1. open CMD Prompt
+2. Create your main directory (I created on my Desktop location)
+3. follow These Steps
+C:\Users\Anjali>cd Desktop
+
+C:\Users\Anjali\Desktop>mkdir Django_Web_Project
+
+C:\Users\Anjali\Desktop>cd Django_Web_Project
+
+C:\Users\Anjali\Desktop\Django_Web_Project>django-admin startproject FirstWebProject
+
+C:\Users\Anjali\Desktop\Django_Web_Project>cd FirstWebProject
+
+C:\Users\Anjali\Desktop\Django_Web_Project\FirstWebProject>python manage.py startapp Web1
+
+C:\Users\Anjali\Desktop\Django_Web_Project\FirstWebProject>
+
+Here; ProjectName: FirstWebProject
+ApplicationName: Web1
+
+4. Open the project folder in VS code
+
+For proceed further; 2 terms you need to know when creating a web project. Website containes HTML, CSS, JS files mainly. We add HTML files in templates folder and add this path in settings.py. and we add CSS and JS file in statics folder and add this link also in settings.py. How?? we will see soon.
+
+Now, create 2 folder "templates" and "statics" in project folder or where manage.py exists.
+
+create index.html file in "templates" folder. this is the file for your website. (homepage)
+
+I have attached index.html file for your reference. we will work on static folder in future.
+
+Now, in settings.py, add 'templates'(same name as of your folder) in TEMPLATES like this
+
+TEMPLATES = [
+
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['templates'],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+Save files.
+In Views.py; which exists on Application Folder "Web1"
+Edit like this
+
+from django.shortcuts import render
+
+def home(request):
+
+    return render(request, 'index.html')
+    
+Save this file.
+
+Now, in urls.py; which exists on Project Folder "FirstWebProject"
+Edit like this
+
+from django.contrib import admin
+
+from django.urls import path
+
+from Web1 import views 
+ 
+urlpatterns = [
+
+    path('admin/', admin.site.urls),
+    path('', views.home)
+]
+
+Save this file too.
+
+And in the last, run the following command in VS Terminal
+python manage.py runserver
+and Click on the IP Address Link; You will get the HTML Page which is rendering on the webBrowser.
+
+ProjectName: FirstWebProject
+
+ApplicationName: Web1
+.
+===========================================================================================================================================================================
+
+
+#### 2. SecondWebProject
+##### Title: 2Django_SimpleHTMLPage_Bootstrap_Connectivity
+It is about how to render bootstrap HTML page with Django Platform.
+
+Please Refer this sub-repository "FirstWebProject" for connectivity.
+
+We can render Bootstrap HTML pages also in Django platform.
+
+I have attached only index.html file here which placed into templates folder. I have used bootstrap starter template so that we do not have to link all the files manually.
+    
+###### Elements:
+1. Navbar with sticky-top
+2. Carousel with indicators
+3. Grid Elements
+4. Footer
+
+ProjectName: SecondWebProject
+
+ApplicationName: Web 
+.
+===========================================================================================================================================================================
+
+#### 3. ThirdWebProject
+##### Title: 3Django_SimpleHTMLPage_CSS_Connectivity
+It is about how to add CSS file and how to render it on Webpage.
+
+Prerequisite: Just go through with my previous repository "1Django_SimpleHTMLPage_Connectivity" to understand the connectivity.
+
+2 ways are exists to run CSS scripts on Webpage via Django Platform:
+1. given by PATH
+2. given by django built in template tags which starts and ends with {}
+
+So, to understand the directory nature
+we have templates folder in which index.html exists
+we have statics folder in which we have css folder which contains style.css file
+Okay.
+
+I have attached both HTML and CSS Files in the repository.
+
+So, in settings.py you have to add these lines:
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'statics')
+]
+
+I have attached ""settings.py" in repository to understand where I put these lines.
+
+So,
+    
+###### Given by Path: 
+You can add css script in html file like this:
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+###### Given by django built in template tags:
+In the head tag; add 
+
+{% load static %}
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+   
+I have attached these 2 ways in index.html and index1.html(while running the code; make sure you keep only one file and having name "index.html".
+
+ProjectName: ThirdWebProject
+
+ApplicationName: Web 
+.
+===========================================================================================================================================================================
+
+
 #### 4. FourthWebProject
 ##### Title: 4Django_SimpleHTMLPage_CSS_JS_Bootstrap_Connectivity
 It is about how to connect JS script in whole package and how to implement in Django Framework.
