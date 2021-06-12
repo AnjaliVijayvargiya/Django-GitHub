@@ -125,7 +125,8 @@ and Click on the IP Address Link; You will get the HTML Page which is rendering 
 ProjectName: FirstWebProject
 
 ApplicationName: Web1
-![](Results/WebProject5&6.png)
+
+![](Results/WebProjec.png)
 ===========================================================================================================================================================================
 
 
@@ -148,7 +149,8 @@ I have attached only index.html file here which placed into templates folder. I 
 ProjectName: SecondWebProject
 
 ApplicationName: Web 
-![](Results/WebProject5&6.png)
+
+![](Results/WebProjec.png)
 ===========================================================================================================================================================================
 
 #### 3. ThirdWebProject
@@ -196,7 +198,8 @@ I have attached these 2 ways in index.html and index1.html(while running the cod
 ProjectName: ThirdWebProject
 
 ApplicationName: Web 
-![](Results/WebProject5&6.png)
+
+![](Results/WebProjec.png)
 ===========================================================================================================================================================================
 
 
@@ -230,8 +233,9 @@ In the head tag; add
 
 ProjectName: FourthWebProject
 
-ApplicationName: Web 
-![](Results/WebProject5&6.png)
+ApplicationName: Web
+
+![](Results/WebProjec.png)
 ===========================================================================================================================================================================
 
 #### 5. FifthWebProject
